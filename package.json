@@ -2,7 +2,7 @@
 	"name": "toggle-maximized",
 	"displayName": "Toggle Maximized",
 	"description": "Toggle editors and panels with one keybinding, auto toggle embedded editors (like side by side diff)",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "olov-jacobsen",
 	"license": "(MIT OR Apache-2.0)",
 	"repository": {
@@ -33,15 +33,13 @@
 		],
 		"keybindings": [
 			{
-				"command": "workbench.action.toggleMaximizedPanel",
 				"key": "alt+z",
-				"mac": "alt+z"
+				"command": "toggle-maximized.toggleMaximizedEditor"
 			},
 			{
-				"command": "toggle-maximized.toggleMaximizedEditor",
 				"key": "alt+z",
-				"mac": "alt+z",
-				"when": "editorTextFocus"
+				"command": "workbench.action.toggleMaximizedPanel",
+				"when": "terminalFocus || panelFocus"
 			}
 		],
 		"configuration": {
