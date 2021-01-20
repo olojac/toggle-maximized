@@ -2,7 +2,7 @@
 Improves maximizing behavior in VS Code
 
 - Toggle maximize editor and terminal with one keybinding.
-- Auto maximize embedded editors, like scm side by side diff on focus 
+- Auto maximize embedded editors, like scm side by side diff on focus
 
 ## Details
 Keybindings:
@@ -39,3 +39,11 @@ get the toggled state of the terminal, and there is only a toggle command for th
 ### 0.0.1
 
 Initial release
+
+
+## Build
+```sh
+yarn install
+npm install -g vsce
+vsce package
+```
